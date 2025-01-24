@@ -10,6 +10,10 @@ type ConfirmHcaptchaProps = Omit<HcaptchaProps, 'url' | 'style'> & {
    * The url domain defined on your hCaptcha. You generally will not need to change this.
    */
   baseUrl?: string;
+  /**
+   * Render the backdrop
+   */
+  hasBackdrop?: boolean;
 }
 
 export default class ConfirmHcaptcha extends React.Component<ConfirmHcaptchaProps> {
